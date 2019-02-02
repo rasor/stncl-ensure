@@ -31,6 +31,9 @@ export namespace Components {
 
   interface AppRoot {}
   interface AppRootAttributes extends StencilHTMLAttributes {}
+
+  interface AppSemantics {}
+  interface AppSemanticsAttributes extends StencilHTMLAttributes {}
 }
 
 declare global {
@@ -39,6 +42,7 @@ declare global {
     'AppHome': Components.AppHome;
     'AppProfile': Components.AppProfile;
     'AppRoot': Components.AppRoot;
+    'AppSemantics': Components.AppSemantics;
   }
 
   interface StencilIntrinsicElements {
@@ -46,6 +50,7 @@ declare global {
     'app-home': Components.AppHomeAttributes;
     'app-profile': Components.AppProfileAttributes;
     'app-root': Components.AppRootAttributes;
+    'app-semantics': Components.AppSemanticsAttributes;
   }
 
 
@@ -73,11 +78,18 @@ declare global {
     new (): HTMLAppRootElement;
   };
 
+  interface HTMLAppSemanticsElement extends Components.AppSemantics, HTMLStencilElement {}
+  var HTMLAppSemanticsElement: {
+    prototype: HTMLAppSemanticsElement;
+    new (): HTMLAppSemanticsElement;
+  };
+
   interface HTMLElementTagNameMap {
     'app-ensure': HTMLAppEnsureElement
     'app-home': HTMLAppHomeElement
     'app-profile': HTMLAppProfileElement
     'app-root': HTMLAppRootElement
+    'app-semantics': HTMLAppSemanticsElement
   }
 
   interface ElementTagNameMap {
@@ -85,6 +97,7 @@ declare global {
     'app-home': HTMLAppHomeElement;
     'app-profile': HTMLAppProfileElement;
     'app-root': HTMLAppRootElement;
+    'app-semantics': HTMLAppSemanticsElement;
   }
 
 

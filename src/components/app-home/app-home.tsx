@@ -33,6 +33,11 @@ export class AppHome {
             <button>Ensure</button>
           </stencil-route-link>
         </div>
+        <div>
+          <stencil-route-link url='/semantics'>
+            <button>Semantics</button>
+          </stencil-route-link>
+        </div>
       </div>
     );
   }
