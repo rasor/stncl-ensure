@@ -16,6 +16,9 @@ import {
 
 export namespace Components {
 
+  interface AppEnsure {}
+  interface AppEnsureAttributes extends StencilHTMLAttributes {}
+
   interface AppHome {}
   interface AppHomeAttributes extends StencilHTMLAttributes {}
 
@@ -32,17 +35,25 @@ export namespace Components {
 
 declare global {
   interface StencilElementInterfaces {
+    'AppEnsure': Components.AppEnsure;
     'AppHome': Components.AppHome;
     'AppProfile': Components.AppProfile;
     'AppRoot': Components.AppRoot;
   }
 
   interface StencilIntrinsicElements {
+    'app-ensure': Components.AppEnsureAttributes;
     'app-home': Components.AppHomeAttributes;
     'app-profile': Components.AppProfileAttributes;
     'app-root': Components.AppRootAttributes;
   }
 
+
+  interface HTMLAppEnsureElement extends Components.AppEnsure, HTMLStencilElement {}
+  var HTMLAppEnsureElement: {
+    prototype: HTMLAppEnsureElement;
+    new (): HTMLAppEnsureElement;
+  };
 
   interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {}
   var HTMLAppHomeElement: {
@@ -63,12 +74,14 @@ declare global {
   };
 
   interface HTMLElementTagNameMap {
+    'app-ensure': HTMLAppEnsureElement
     'app-home': HTMLAppHomeElement
     'app-profile': HTMLAppProfileElement
     'app-root': HTMLAppRootElement
   }
 
   interface ElementTagNameMap {
+    'app-ensure': HTMLAppEnsureElement;
     'app-home': HTMLAppHomeElement;
     'app-profile': HTMLAppProfileElement;
     'app-root': HTMLAppRootElement;
