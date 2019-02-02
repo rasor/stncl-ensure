@@ -7,21 +7,22 @@ import { Component } from '@stencil/core';
 })
 export class AppHome {
 
+  getString(){
+    return 'hallo world!'
+  }
   render() {
     return (
       <div class='app-home'>
-        <p>
-          Welcome to the Stencil App Starter.
-          You can use this starter to build entire apps all with
-          web components using Stencil!
-          Check out our docs on <a href='https://stenciljs.com'>stenciljs.com</a> to get started.
+        <p>Solving puzzle 
+          <a href='https://www.testdome.com/questions/21948?generatorId=20&questionIds=21948%2C13651%2C13919%2C7282&type=FromTest'>Ensure</a>
         </p>
+        <p>{this.getString()}</p>
 
-        <stencil-route-link url='/profile/stencil'>
+        {/* <stencil-route-link url='/profile/stencil'>
           <button>
             Profile page
           </button>
-        </stencil-route-link>
+        </stencil-route-link> */}
       </div>
     );
   }

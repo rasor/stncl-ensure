@@ -18,6 +18,7 @@ cd stncl-ensure
 
 # notice you are connected to original origin
 git remote -v
+# origin  https://github.com/ionic-team/stencil-app-starter (fetch)
 
 # Create a new git repo e.g. on github
 
@@ -26,12 +27,15 @@ git remote set-url origin https://github.com/rasor/stncl-ensure.git
 
 # notice you are now connected to your own origin
 git remote -v
+# origin  https://github.com/rasor/stncl-ensure.git (fetch)
 ```
 
 and run:
 
 ```bash
+npm install
 npm start
+# http://localhost:3333/ will open in your browser
 ```
 
 To build the app for production, run:
