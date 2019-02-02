@@ -1,5 +1,9 @@
 # Testing HTML5 / CSS3 / TypeScript from [Tests | TestDome](https://www.testdome.com/tests)
 
+Alternative sandbox:
+
+* [TypeScript - JSFiddle](https://jsfiddle.net/boilerplate/typescript)
+
 ## App Template: Stencil App Starter
 
 Stencil is a compiler for building fast web apps using Web Components.
