@@ -38,6 +38,11 @@ export class AppHome {
             <button>Semantics</button>
           </stencil-route-link>
         </div>
+        <div>
+          <stencil-route-link url='/removeproperty'>
+            <button>RemoveProperty</button>
+          </stencil-route-link>
+        </div>
       </div>
     );
   }

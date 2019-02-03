@@ -29,6 +29,9 @@ export namespace Components {
     'match'?: MatchResults;
   }
 
+  interface AppRemoveProperty {}
+  interface AppRemovePropertyAttributes extends StencilHTMLAttributes {}
+
   interface AppRoot {}
   interface AppRootAttributes extends StencilHTMLAttributes {}
 
@@ -41,6 +44,7 @@ declare global {
     'AppEnsure': Components.AppEnsure;
     'AppHome': Components.AppHome;
     'AppProfile': Components.AppProfile;
+    'AppRemoveProperty': Components.AppRemoveProperty;
     'AppRoot': Components.AppRoot;
     'AppSemantics': Components.AppSemantics;
   }
@@ -49,6 +53,7 @@ declare global {
     'app-ensure': Components.AppEnsureAttributes;
     'app-home': Components.AppHomeAttributes;
     'app-profile': Components.AppProfileAttributes;
+    'app-remove-property': Components.AppRemovePropertyAttributes;
     'app-root': Components.AppRootAttributes;
     'app-semantics': Components.AppSemanticsAttributes;
   }
@@ -72,6 +77,12 @@ declare global {
     new (): HTMLAppProfileElement;
   };
 
+  interface HTMLAppRemovePropertyElement extends Components.AppRemoveProperty, HTMLStencilElement {}
+  var HTMLAppRemovePropertyElement: {
+    prototype: HTMLAppRemovePropertyElement;
+    new (): HTMLAppRemovePropertyElement;
+  };
+
   interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {}
   var HTMLAppRootElement: {
     prototype: HTMLAppRootElement;
@@ -88,6 +99,7 @@ declare global {
     'app-ensure': HTMLAppEnsureElement
     'app-home': HTMLAppHomeElement
     'app-profile': HTMLAppProfileElement
+    'app-remove-property': HTMLAppRemovePropertyElement
     'app-root': HTMLAppRootElement
     'app-semantics': HTMLAppSemanticsElement
   }
@@ -96,6 +108,7 @@ declare global {
     'app-ensure': HTMLAppEnsureElement;
     'app-home': HTMLAppHomeElement;
     'app-profile': HTMLAppProfileElement;
+    'app-remove-property': HTMLAppRemovePropertyElement;
     'app-root': HTMLAppRootElement;
     'app-semantics': HTMLAppSemanticsElement;
   }
