@@ -37,6 +37,9 @@ export namespace Components {
 
   interface AppSemantics {}
   interface AppSemanticsAttributes extends StencilHTMLAttributes {}
+
+  interface AppTest {}
+  interface AppTestAttributes extends StencilHTMLAttributes {}
 }
 
 declare global {
@@ -47,6 +50,7 @@ declare global {
     'AppRemoveProperty': Components.AppRemoveProperty;
     'AppRoot': Components.AppRoot;
     'AppSemantics': Components.AppSemantics;
+    'AppTest': Components.AppTest;
   }
 
   interface StencilIntrinsicElements {
@@ -56,6 +60,7 @@ declare global {
     'app-remove-property': Components.AppRemovePropertyAttributes;
     'app-root': Components.AppRootAttributes;
     'app-semantics': Components.AppSemanticsAttributes;
+    'app-test': Components.AppTestAttributes;
   }
 
 
@@ -95,6 +100,12 @@ declare global {
     new (): HTMLAppSemanticsElement;
   };
 
+  interface HTMLAppTestElement extends Components.AppTest, HTMLStencilElement {}
+  var HTMLAppTestElement: {
+    prototype: HTMLAppTestElement;
+    new (): HTMLAppTestElement;
+  };
+
   interface HTMLElementTagNameMap {
     'app-ensure': HTMLAppEnsureElement
     'app-home': HTMLAppHomeElement
@@ -102,6 +113,7 @@ declare global {
     'app-remove-property': HTMLAppRemovePropertyElement
     'app-root': HTMLAppRootElement
     'app-semantics': HTMLAppSemanticsElement
+    'app-test': HTMLAppTestElement
   }
 
   interface ElementTagNameMap {
@@ -111,6 +123,7 @@ declare global {
     'app-remove-property': HTMLAppRemovePropertyElement;
     'app-root': HTMLAppRootElement;
     'app-semantics': HTMLAppSemanticsElement;
+    'app-test': HTMLAppTestElement;
   }
 
 

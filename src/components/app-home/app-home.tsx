@@ -40,7 +40,12 @@ export class AppHome {
         </div>
         <div>
           <stencil-route-link url='/removeproperty'>
-            <button>RemoveProperty</button>
+            <button>RemoveProperty - and more</button>
+          </stencil-route-link>
+        </div>
+        <div>
+          <stencil-route-link url='/test'>
+            <button>Test</button>
           </stencil-route-link>
         </div>
       </div>

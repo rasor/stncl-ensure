@@ -22,6 +22,7 @@ export class AppRoot {
               <stencil-route url='/ensure' component='app-ensure' exact={true} />
               <stencil-route url='/semantics' component='app-semantics' exact={true} />
               <stencil-route url='/removeproperty' component='app-remove-property' exact={true} />
+              <stencil-route url='/test' component='app-test' exact={true} />
               <stencil-route url='/profile/:name' component='app-profile' />
             </stencil-route-switch>
           </stencil-router>
