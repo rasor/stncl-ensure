@@ -1,0 +1,15 @@
+.app-ensure {
+  padding: 10px;
+}
+a {
+  cursor: help;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+a::before {
+  content: ">";
+}
+a::after {
+  content: "<";
+}
+

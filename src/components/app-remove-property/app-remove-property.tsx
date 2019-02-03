@@ -7,7 +7,7 @@ interface Person {
 
 @Component({
   tag: 'app-remove-property',
-  //styleUrl: 'app-remove-property.css',
+  styleUrl: 'app-remove-property.css',
   shadow: true
 })
 export class AppRemoveProperty {
@@ -63,6 +63,13 @@ export class AppRemoveProperty {
               <a href='https://www.testdome.com/questions/8521?generatorId=14&questionIds=21948%2C11883%2C8521&type=FromTest'>formatDate</a></span>
           </p>
           <p>{this.formatDate("1/3/2014")}</p>
+        </div>
+
+        <div>
+          <p>Solving puzzle <span>
+              <a href='https://www.testdome.com/questions/23563?generatorId=13&questionIds=13919%2C23563%2C17629&type=FromTest'>Styling Links</a></span>
+          </p>
+          <a href="http://www.testdome.com">Check documentation</a>
         </div>
 
       </div>
